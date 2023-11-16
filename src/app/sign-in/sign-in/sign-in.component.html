@@ -1,0 +1,44 @@
+<div class="container">
+  <h2>Formulario de Registro</h2>
+  <form (ngSubmit)="registrarUsuario()">
+    <div class="form-group">
+      <label for="userId">ID de Usuario:</label>
+      <input type="number" class="form-control" id="userId" [(ngModel)]="userId" name="userId" required>
+    </div>
+    <div class="form-group">
+      <label for="userPhoneNumber">Número de Teléfono:</label>
+      <input type="number" class="form-control" id="userPhoneNumber" [(ngModel)]="userPhoneNumber" name="userPhoneNumber" required>
+    </div>
+    <div class="form-group">
+      <label for="userAge">Edad:</label>
+      <input type="number" class="form-control" id="userAge" [(ngModel)]="userAge" name="userAge" required>
+    </div>
+    <div class="form-group">
+        <label for="userType">Tipo de Usuario:</label>
+        <select class="form-control" id="userType" [(ngModel)]="userType" name="userType" required>
+          <option value="Gamer">Gamer</option>
+          <option value="Invitado">Invitado</option>
+        </select>
+      </div>
+      
+    <div class="form-group">
+      <label for="userName">Nombre de Usuario:</label>
+      <input type="text" class="form-control" id="userName" [(ngModel)]="userName" name="userName" required>
+    </div>
+    <div class="form-group">
+      <label for="userPassword">Contraseña:</label>
+      <input type="password" class="form-control" id="userPassword" [(ngModel)]="userPassword" name="userPassword" required>
+    </div>
+    <div class="form-group">
+      <label for="userEmail">Correo Electrónico:</label>
+      <input type="email" class="form-control" id="userEmail" [(ngModel)]="userEmail" name="userEmail" required>
+    </div>
+
+    <div class="row">
+        <div class="col"><button type="submit" class="btn btn-primary">Registrar</button></div>
+        <div class="col"><button type="button" class="btn btn-secondary" (click)="volverAtras()">Volver Atrás</button></div>
+      </div>
+  
+    
+  </form>
+</div>

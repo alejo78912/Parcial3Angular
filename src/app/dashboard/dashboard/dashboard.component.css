@@ -1,0 +1,40 @@
+/* Estilos específicos para el componente de juegos en el dashboard */
+.app-games-card {
+    height: 350px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .app-games-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .app-games-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .app-games-card-body {
+    padding: 15px;
+  }
+  
+  .app-games-card-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .app-games-card-text {
+    font-size: 0.9em;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  

@@ -1,0 +1,27 @@
+/* Estilos personalizados */
+.custom-header {
+    background-color: #007bff; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .custom-buttons {
+    display: flex;
+    gap: 10px; /* Espaciado entre botones */
+  }
+  
+  /* Estilo para el botón de salir */
+  .btn-salir {
+    background-color: #dc3545; /* Color de fondo del botón salir */
+    border-color: #dc3545; /* Color del borde del botón salir */
+  }
+  
+  /* Estilo para el botón de ofertas especiales */
+  .btn-ofertas {
+    background-color: #28a745; /* Color de fondo del botón ofertas especiales */
+    border-color: #28a745; /* Color del borde del botón ofertas especiales */
+  }
+  

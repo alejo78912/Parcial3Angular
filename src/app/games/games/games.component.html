@@ -1,0 +1,22 @@
+<div class="container mt-4">
+    <h2 class="mb-4">Ultimos lanzamientos</h2>
+  
+    <div *ngIf="juegosMayoresDe18.length > 0; else noGames" class="row">
+      <div *ngFor="let juego of juegosMayoresDe18" class="col-md-4 mb-4">
+        <div class="card">
+          <img [src]="juego.imagen" alt="{{ juego.nombre }}" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">{{ juego.nombre }}</h5>
+            <p class="card-text">Fecha de lanzamiento: {{ juego.fechaLanzamiento }}</p>
+            <p class="card-text">Precio: {{ juego.precio | currency }}</p>
+            <p class="card-text">Edad permitida: {{ juego.edadPermitida }}+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <ng-template #noGames>
+      <p class="mt-4">No hay juegos disponibles para tu edad.</p>
+    </ng-template>
+  </div>
+  
